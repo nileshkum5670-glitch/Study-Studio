@@ -411,7 +411,7 @@
         <footer>
             <p>&copy; [ 2025 ] Study Studio App. All rights reserved.</p>
             <p>This Privacy Policy complies with Google Play Store requirements and global privacy standards.</p>
-            <p>Version: 1.0 | Last Updated: [Insert Current Date]</p>
+            <p>Version: 1.0 | Last Updated: [ 29/12/2025 ]</p>
         </footer>
     </div>
 
@@ -419,13 +419,13 @@
         // Add current year to footer
         document.addEventListener('DOMContentLoaded', function() {
             const currentYear = new Date().getFullYear();
-            const yearElements = document.querySelectorAll('[Current Year]');
+            const yearElements = document.querySelectorAll('[ 2025 ]');
             yearElements.forEach(el => {
                 el.textContent = currentYear;
             });
             
             // Add current date if placeholder exists
-            const dateElements = document.querySelectorAll('[Insert Current Date]');
+            const dateElements = document.querySelectorAll('[ 29/12/2025 ');
             const currentDate = new Date().toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
