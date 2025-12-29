@@ -33,6 +33,10 @@
         h3 {
             color: #7f8c8d;
         }
+        h4 {
+            color: #95a5a6;
+            margin-top: 15px;
+        }
         .date {
             color: #95a5a6;
             font-style: italic;
@@ -52,6 +56,8 @@
         }
         .section {
             margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
         }
         ul {
             padding-left: 20px;
@@ -64,6 +70,8 @@
             text-align: center;
             color: #7f8c8d;
             font-size: 14px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
         }
         .note {
             background-color: #e8f4fc;
@@ -72,303 +80,361 @@
             border-left: 4px solid #3498db;
             margin: 20px 0;
         }
+        .quiz-features {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #2ecc71;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy - Study Studio App</h1>
-        <div class="date"><strong>Last Updated:</strong> [ 12/29/2025 ]</div>
+        <div class="date"><strong>Last Updated:</strong> [ 29/12/2025 ]</div>
         
         <div class="section">
             <h2>1. Introduction</h2>
-            <p>Study Studio ("App" or "Service") provides users with features for creating quizzes, using document tools, generating OMR sheets, creating admit cards, generating and scanning QR codes, making UPI payments, and various document conversion features. This Privacy Policy explains how we collect, use, share, and protect your information.</p>
+            <p>Study Studio ("App" or "Service") provides comprehensive quiz creation and management tools, document processing features, and educational utilities. This Privacy Policy explains how we collect, use, share, and protect your information in compliance with global privacy standards.</p>
         </div>
 
         <div class="section">
-            <h2>2. Data Collection</h2>
-            <h3>2.1 Types of Data Collected:</h3>
-            
-            <h4>(a) User-Provided Data:</h4>
-            <ul>
-                <li>Quiz content (questions, options, answers)</li>
-                <li>OMR sheet information (seat number, candidate name, roll number, subject)</li>
-                <li>Uploaded images and documents</li>
-                <li>Text entered in form builder</li>
-                <li>Data/URL for QR code generation</li>
-                <li>Files uploaded for document conversion</li>
-                <li>UPI payment QR codes (scanned or uploaded)</li>
-            </ul>
+            <h2>2. Comprehensive Quiz Features</h2>
+            <div class="quiz-features">
+                <h3>2.1 Quiz Creation Options:</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <strong>Multiple Choice Questions:</strong> Create questions with 2-8 options including single and multiple correct answers
+                    </div>
+                    <div class="feature-item">
+                        <strong>True/False Questions:</strong> Binary answer format questions
+                    </div>
+                    <div class="feature-item">
+                        <strong>Fill in the Blanks:</strong> Text completion questions with answer validation
+                    </div>
+                    <div class="feature-item">
+                        <strong>Match Following:</strong> Drag-and-drop or selection-based matching questions
+                    </div>
+                    <div class="feature-item">
+                        <strong>Question & Answer:</strong> Descriptive answer questions with manual or automated checking
+                    </div>
+                    <div class="feature-item">
+                        <strong>Live Quiz Conversion:</strong> Convert any created quiz into interactive live session
+                    </div>
+                </div>
 
-            <h4>(b) Dashboard-Related Data:</h4>
-            <ul>
-                <li>Number and types of quizzes created</li>
-                <li>Number of OMR sheets generated</li>
-                
-            </ul>
+                <h3>2.2 Live Quiz Features:</h3>
+                <ul>
+                    <li><strong>Time Settings:</strong> Set individual question time limits or overall quiz duration</li>
+                    <li><strong>Real-time Conversion:</strong> Instantly convert any quiz into live interactive format</li>
+                    <li><strong>Participant Management:</strong> Monitor live participants and their progress</li>
+                    <li><strong>Auto-submission:</strong> Automatic quiz submission when time expires</li>
+                </ul>
 
-            <h4>(c) QR Code/Barcode Scanner Data:</h4>
-            <ul>
-                <li>Content of scanned QR codes/barcodes</li>
-                <li>Payment information from UPI QR codes (UPI ID, amount, note)</li>
-                <li>Website URLs (if present in QR code)</li>
-                <li>Contact information (vCard/MeCard etc.)</li>
-                <li>Wi-Fi credentials (if present in QR code)</li>
-                <li>Text messages and other data formats</li>
-            </ul>
-
-            <h4>(d) UPI Payment-Related Data:</h4>
-            <ul>
-                <li>Payment details from scanned UPI QR codes</li>
-                <li>List of payment apps available on user's device</li>
-                <li>Name of selected payment app (optional)</li>
-            </ul>
-
-            <h4>(e) Automatically Collected Data:</h4>
-            <ul>
-                <li>Device information (model, operating system, camera access)</li>
-                <li>App usage statistics (feature usage, dashboard data, error logs)</li>
-                <li>Performance data</li>
-                <li>Scanning statistics (number and types of codes scanned)</li>
-            </ul>
-
-            <h4>(f) Third-Party Services Data:</h4>
-            <ul>
-                <li>Google Play Services (for app download and updates)</li>
-                <li>UPI payment gateways (for payment processing)</li>
-                <li>Camera access (for QR code scanning)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>3. Data Usage</h2>
-            <p>We use your data for the following purposes:</p>
-            <ul>
-                <li><strong>Providing App Functionality:</strong> Quiz creation and management, OMR sheet generation, document conversion and processing, QR code generation and scanning, barcode scanning, UPI payment QR code processing, home screen dashboard display</li>
-                <li><strong>UPI Payment Process:</strong> Scanning or uploading payment QR codes, identifying payment apps available on user's device, displaying payment options list, passing payment details to selected app</li>
-                <li><strong>Dashboard Functionality:</strong> Tracking number of quizzes created, recording number of OMR sheets generated, user activity analysis, performance metrics calculation</li>
-                <li><strong>Service Improvement:</strong> Enhancing app performance and user experience, improving scanning accuracy, improving dashboard reporting, developing new features</li>
-                <li><strong>Technical Support:</strong> Resolving user issues, troubleshooting scanning problems, fixing dashboard data discrepancies</li>
-                <li><strong>Security:</strong> Preventing unauthorized access and misuse, ensuring security of scanned codes, secure processing of payment information, maintaining dashboard data privacy</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>4. Data Storage and Security</h2>
-            
-            <h3>4.1 Data Storage:</h3>
-            <ul>
-                <li>All user-created data (quizzes, OMR sheets, documents) is stored locally on user's device</li>
-                <li>Dashboard data is stored in local database</li>
-                <li>Scanned QR code/barcode history may be stored locally (optional)</li>
-                <li>UPI payment information is NOT stored in any form</li>
-                <li>List of payment apps is temporarily stored only during session</li>
-                <li>NO data is stored on our servers</li>
-            </ul>
-
-            <h3>4.2 Data Security:</h3>
-            <ul>
-                <li>Use of local data encryption</li>
-                <li>Dashboard data is for local use only</li>
-                <li>Camera access only for QR/barcode scanning</li>
-                <li>UPI payment information is directly transferred to selected payment app</li>
-                <li>No intermediary involved in payment process</li>
-                <li>Respect for device security features</li>
-                <li>Regular security updates</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>5. Data Sharing</h2>
-            <p>We do NOT share your personal data with any third party, except:</p>
-            <ul>
-                <li><strong>For Payment Processing:</strong> When scanning UPI QR codes, payment information is transferred to your chosen payment app. We do NOT view, store, or process payment information.</li>
-                <li><strong>For Opening Websites:</strong> When scanning URL QR codes, links open in your default browser</li>
-                <li><strong>Dashboard Data:</strong> Dashboard data is for local use only and NOT shared with any third party</li>
-                <li>For compliance with legal requirements</li>
-                <li>With user's explicit consent</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>6. Third-Party Services</h2>
-            <p>The app may use the following third-party services:</p>
-            <ul>
-                <li><strong>Google Play Services:</strong> For app distribution and updates</li>
-                <li><strong>UPI Payment Apps:</strong> For payment processing (Google Pay, PhonePe, Paytm, BHIM etc.)</li>
-                <li><strong>Device Camera:</strong> For QR code/barcode scanning</li>
-                <li><strong>Browser:</strong> For opening scanned URLs</li>
-                <li><strong>System Intents:</strong> For identifying and launching payment apps</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>7. UPI Payment Process Details</h2>
-            
-            <h3>7.1 Payment Flow:</h3>
-            <ol>
-                <li>User scans or uploads payment QR code</li>
-                <li>App parses QR code data (UPI ID, amount, note)</li>
-                <li>App identifies payment apps available on user's device</li>
-                <li>User is presented with list of payment options</li>
-                <li>User selects preferred payment app</li>
-                <li>Payment details are passed to selected app</li>
-                <li>Payment process is completed by selected app</li>
-            </ol>
-
-            <h3>7.2 Privacy Safeguards:</h3>
-            <ul>
-                <li>Payment details shared ONLY with selected app</li>
-                <li>NO payment logs are stored</li>
-                <li>NO transaction IDs or receipts are stored</li>
-                <li>App does NOT track payment status</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>8. Dashboard Functionality</h2>
-            
-            <h3>8.1 Data Collected:</h3>
-            <ul>
-                <li>Total number of quizzes created</li>
-                <li>Number of OMR sheets</li>
-                <li>Document conversion counts</li>
-                <li>QR code generation statistics</li>
-                <li>Scanning history numbers</li>
-            </ul>
-
-            <h3>8.2 Data Usage:</h3>
-            <ul>
-                <li>For local display only</li>
-                <li>Providing user overview of their activity</li>
-                <li>Service usage pattern analysis (for user only)</li>
-            </ul>
-
-            <h3>8.3 Data Storage:</h3>
-            <ul>
-                <li>All dashboard data in local database</li>
-                <li>NO cloud synchronization</li>
-                <li>Data available only on device where app is installed</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>9. QR Code Scanner Special Provisions</h2>
-            
-            <h3>9.1 Permissions:</h3>
-            <ul>
-                <li><strong>Camera Access:</strong> Only for QR code/barcode scanning</li>
-                <li><strong>Internet Access:</strong> For opening URLs and payment processing</li>
-                <li><strong>File Storage:</strong> For saving scan history (optional)</li>
-            </ul>
-
-            <h3>9.2 Security Warnings:</h3>
-            <ul>
-                <li>Scan QR codes only from trusted sources</li>
-                <li>Verify source before scanning payment QR codes</li>
-                <li>Do NOT share QR codes containing sensitive information</li>
-                <li>Keep dashboard data secure</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>10. Advertising Policy</h2>
-            <p>This app does NOT display any type of advertisements:</p>
-            <ul>
-                <li>NO ad networks integrated</li>
-                <li>NO tracking cookies or advertising IDs used</li>
-                <li>User data is NEVER shared for advertising purposes</li>
-                <li>Dashboard data is NOT used for any advertising purpose</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>11. User Rights</h2>
-            <p>Users have the following rights:</p>
-            <ul>
-                <li><strong>Data Access:</strong> Right to view data stored on your device</li>
-                <li><strong>Data Deletion:</strong> Right to delete local data through app settings</li>
-                <li><strong>Dashboard Data Reset:</strong> Right to reset dashboard statistics</li>
-                <li><strong>Clear Scan History:</strong> Right to clear QR scan history</li>
-                <li><strong>Permission Control:</strong> Right to manage app permissions through device settings</li>
-                <li><strong>Payment Options:</strong> Right to choose or cancel payment app</li>
-                <li><strong>Withdraw Consent:</strong> Right to opt-out of service by uninstalling app</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>12. Children's Privacy</h2>
-            <p>This app is NOT intended for children under 13 years:</p>
-            <ul>
-                <li>We do NOT knowingly collect personal data from children under 13</li>
-                <li>UPI payment feature is for adult use only</li>
-                <li>Parents are advised to monitor children's online activity</li>
-                <li>Dashboard data collection also does NOT apply to children</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>13. Policy Changes</h2>
-            <p>We may update this Privacy Policy periodically:</p>
-            <ul>
-                <li>Changes will be notified by posting in app or on Google Play Store page</li>
-                <li>Direct notification may be provided for important changes</li>
-                <li>Continued use of app after new policy is posted constitutes acceptance</li>
-                <li>Any changes to dashboard data collection practices will be clearly communicated</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>14. Risk Acceptance</h2>
-            <p>Users acknowledge that:</p>
-            <ul>
-                <li>QR code scanning is at their own risk</li>
-                <li>It's their responsibility to verify source before scanning UPI payment QR codes</li>
-                <li>Sensitive information QR codes should not be shared</li>
-                <li>Dashboard data is for informational purposes only</li>
-                <li>App does NOT guarantee accuracy of QR code content, payment success, or data security</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>15. Liability Limitations</h2>
-            <p>Our liability limitations:</p>
-            <ul>
-                <li>Not responsible for payment transactions</li>
-                <li>Do NOT guarantee authenticity of QR code content</li>
-                <li>Do NOT guarantee complete accuracy of dashboard data</li>
-                <li>Not responsible for functionality of third-party payment apps</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>16. Contact Information</h2>
-            <div class="contact-info">
-                <p><strong>Developer:</strong> [ Nilesh Kumar ]</p>
-                <p><strong>Email:</strong> [ kumarn17717@gmail.com]</p>
-                <p><strong>Website:</strong> </p>
+                <h3>2.3 Results Dashboard:</h3>
+                <ul>
+                    <li><strong>Comprehensive Analytics:</strong> Detailed breakdown of right and wrong answers</li>
+                    <li><strong>Performance Metrics:</strong> Score percentage, time taken, accuracy rate</li>
+                    <li><strong>Question-wise Analysis:</strong> View performance for each question type</li>
+                    <li><strong>Comparative Reports:</strong> Compare results across multiple attempts</li>
+                    <li><strong>Export Options:</strong> Download results in multiple formats</li>
+                </ul>
             </div>
         </div>
 
         <div class="section">
-            <h2>17. Acceptance</h2>
-            <p>By using this app, you agree to the terms of this Privacy Policy. If you do not agree with this policy, please do not use the app.</p>
+            <h2>3. Data Collection</h2>
+            
+            <h3>3.1 Types of Data Collected:</h3>
+            
+            <h4>(a) Quiz Content Data:</h4>
+            <ul>
+                <li>Questions, options, and answers for all question types</li>
+                <li>Quiz settings (time limits, scoring rules, difficulty levels)</li>
+                <li>Live quiz session data (participant responses, timestamps)</li>
+                <li>Results and performance metrics</li>
+                <li>Question banks and quiz templates</li>
+            </ul>
+
+            <h4>(b) User Account Data (if applicable):</h4>
+            <ul>
+                <li>User profile information</li>
+                <li>Quiz history and performance records</li>
+                <li>Created quizzes and templates</li>
+            </ul>
+
+            <h4>(c) Live Session Data:</h4>
+            <ul>
+            
+                <li>Response data and answer choices</li>
+                <li>Time taken for each question</li>
+                <li>Session attendance and participation metrics</li>
+            </ul>
+
+            <h4>(d) Results Analytics Data:</h4>
+            <ul>
+                <li>Right/wrong answer statistics</li>
+                <li>Score distributions and percentiles</li>
+                <li>Question difficulty analysis</li>
+                <li>Performance trends over time</li>
+            </ul>
+
+            <h4>(e) OMR Sheet Data:</h4>
+            <ul>
+                <li>Candidate information (name, roll number, seat number)</li>
+                <li>Subject and exam details</li>
+                <li>Answer key and response data</li>
+                <li>Evaluation results</li>
+            </ul>
+
+            <h4>(f) Document Tools Data:</h4>
+            <ul>
+                <li>Uploaded images and documents</li>
+                <li>Edited and processed files</li>
+                <li>Conversion settings and preferences</li>
+            </ul>
+
+            <h4>(g) UPI Payment Data:</h4>
+            <ul>
+                <li>Scanned payment QR codes (processed only, not stored)</li>
+                <li>Payment app selection preferences</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Data Usage and Processing</h2>
+            
+            <h3>4.1 Quiz Functionality:</h3>
+            <ul>
+                <li><strong>Question Processing:</strong> Store and process various question types with their respective answer validations</li>
+                <li><strong>Live Quiz Management:</strong> Real-time synchronization of quiz sessions, participant management, and response collection</li>
+                <li><strong>Timer Implementation:</strong> Process and enforce time limits for quizzes and individual questions</li>
+                <li><strong>Answer Validation:</strong> Automatic checking of multiple choice, true/false, and fill in blanks questions</li>
+                <li><strong>Matching Algorithm:</strong> Process match following questions with drag-drop or selection logic</li>
+            </ul>
+
+            <h3>4.2 Results Analytics:</h3>
+            <ul>
+                <li><strong>Performance Calculation:</strong> Compute scores, percentages, and accuracy rates</li>
+                <li><strong>Comparative Analysis:</strong> Compare results across different attempts or participants</li>
+                <li><strong>Question Statistics:</strong> Calculate difficulty levels, discrimination indices, and reliability metrics</li>
+                <li><strong>Dashboard Generation:</strong> Create visual representations of performance data</li>
+                <li><strong>Progress Tracking:</strong> Monitor improvement over time for individual users</li>
+            </ul>
+
+            <h3>4.3 Document Processing:</h3>
+            <ul>
+                <li><strong>Image Processing:</strong> Resize, crop, rotate, and compress images as per user settings</li>
+                <li><strong>Document Conversion:</strong> Convert between various formats ( PDF )</li>
+                <li><strong>OMR Processing:</b></strong> Generate and evaluate OMR sheets with custom configurations</li>
+                <li><strong>QR Code Operations:</b></strong> Generate, scan, and process QR codes for various purposes</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Data Storage and Security</h2>
+            
+            <h3>5.1 Storage Locations:</h3>
+            <ul>
+                <li><strong>Local Storage:</strong> All quizzes, results, and documents stored locally on device</li>
+                <li><strong>Session Storage:</strong> Live quiz data stored temporarily during active sessions</li>
+                <li><strong>Cache Storage:</strong> Frequently accessed data cached for performance</li>
+                <li><strong>Backup Storage:</strong> Optional local backup of important data</li>
+            </ul>
+
+            <h3>5.2 Security Measures:</h3>
+            <ul>
+                <li><strong>Data Encryption:</strong> All sensitive data encrypted at rest</li>
+                <li><strong>Access Controls:</strong> Device-level security for stored data</li>
+                <li><strong>Session Security:</strong> Secure session management for live quizzes</li>
+                <li><strong>Regular Updates:</strong> Security patches and vulnerability fixes</li>
+                <li><strong>No External Transmission:</strong> All data processing occurs locally</li>
+            </ul>
+
+            <h3>5.3 Data Retention:</h3>
+            <ul>
+                <li><strong>Quizzes and Results:</strong> Stored until manually deleted by user</li>
+                <li><strong>Live Session Data:</strong> Temporary storage during active sessions</li>
+                <li><strong>Analytics Data:</strong> Stored for historical performance tracking</li>
+                <li><strong>User Preferences:</strong> Persistent storage of settings and preferences</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Live Quiz Features - Data Processing</h2>
+            
+            <h3>6.1 Real-time Data Flow:</h3>
+            <ul>
+                <li><strong>Question Delivery:</strong> Synchronized delivery of questions to all participants</li>
+                <li><strong>Response Collection:</strong> Real-time collection of answers from participants</li>
+                <li><strong>Timer Management:</strong> Precise timing control for each question and overall quiz</li>
+                <li><strong>Progress Tracking:</strong> Live monitoring of participant progress</li>
+            </ul>
+
+            <h3>6.2 Results Processing:</h3>
+            <ul>
+                <li><strong>Instant Evaluation:</strong> Automatic evaluation of objective questions</li>
+                <li><strong>Manual Review:</strong> Support for manual evaluation of descriptive answers</li>
+                <li><strong>Score Calculation:</strong> Real-time score computation based on pre-defined rules</li>
+                <li><strong>Rank Generation:</strong> Automatic ranking of participants based on scores</li>
+            </ul>
+
+            <h3>6.3 Dashboard Features:</h3>
+            <ul>
+                <li><strong>Comprehensive Analytics:</strong> Detailed breakdown of performance metrics</li>
+                <li><strong>Visual Reports:</strong> Charts and graphs for easy understanding</li>
+                <li><strong>Export Capabilities:</strong> Download results in PDF, Excel, or CSV formats</li>
+                <li><strong>Comparative Analysis:</strong> Compare multiple quiz attempts</li>
+                <li><strong>Question Statistics:</strong> Analysis of question difficulty and effectiveness</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. User Rights and Controls</h2>
+            
+            <h3>7.1 Data Management:</h3>
+            <ul>
+                <li><strong>Access Rights:</strong> View all stored quizzes, results, and analytics</li>
+                <li><strong>Deletion Rights:</strong> Delete any quiz, result, or data permanently</li>
+                <li><strong>Export Rights:</strong> Export data in multiple formats for external use</li>
+                
+            </ul>
+
+            <h3>7.2 Privacy Controls:</h3>
+            <ul>
+                <li><strong>Permission Management:</strong> Control app permissions through device settings</li>
+                <li><strong>Data Sharing Controls:</strong> Choose what data to share in live sessions</li>
+                <li><strong>Analytics Opt-out:</strong> Option to disable certain analytics features</li>
+                <li><strong>Session Privacy:</strong> Control visibility in live quiz sessions</li>
+            </ul>
+
+            <h3>7.3 Quiz Controls:</h3>
+            <ul>
+                <li><strong>Time Settings:</strong> Customize timing for quizzes and questions</li>
+                <li><strong>Privacy Settings:</strong> Control participant visibility and data sharing</li>
+                <li><strong>Result Visibility:</strong> Choose what results to show participants</li>
+                <li><strong>Data Retention:</strong> Set automatic deletion rules for old data</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>8. Third-Party Integrations</h2>
+            <ul>
+                <li><strong>No External Analytics:</strong> No integration with Google Analytics, Firebase, or similar services</li>
+                <li><strong>No Social Media Integration:</strong> No Facebook, Twitter, or other social media SDKs</li>
+                <li><strong>Payment Processing:</strong> Direct integration with device payment apps only</li>
+                <li><strong>Document Processing:</strong> All conversions done locally without cloud services</li>
+                <li><strong>QR Code Processing:</strong> Local generation and scanning without external APIs</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. Children's Privacy</h2>
+            <div class="highlight">
+                <p><strong>Important:</strong> This app is NOT intended for children under 13 years of age without parental supervision.</p>
+                <ul>
+                    <li>We do not knowingly collect personal information from children under 13</li>
+                    <li>Live quiz features should be used under adult supervision for children</li>
+                    <li>Parents/guardians are responsible for monitoring children's use of the app</li>
+                    <li>Educational use in schools should comply with institutional privacy policies</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>10. Educational Use Compliance</h2>
+            <p>For educational institutions using this app:</p>
+            <ul>
+                <li><strong>FERPA Compliance:</strong> Local storage ensures student data privacy</li>
+                <li><strong>GDPR Compliance:</strong> Full user control over data collection and deletion</li>
+                <li><strong>COPPA Compliance:</strong> No collection of personal information from children</li>
+                <li><strong>Institutional Policies:</strong> Can be configured to comply with school/college policies</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>11. Updates and Changes</h2>
+            <ul>
+                <li><strong>Policy Updates:</strong> This policy may be updated periodically</li>
+                <li><strong>Feature Updates:</strong> New features may be added with updated data practices</li>
+                <li><strong>User Notification:</strong> Significant changes will be notified within the app</li>
+                <li><strong>Continued Use:</strong> Using the app after updates constitutes acceptance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>12. Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>App Name:</strong>[ Study Studio ]</p>
+                <p><strong>Developer:</strong> [ Nilesh Kumar ]</p>
+                <p><strong>Contact Email:</strong> [ kumarn17717@gmail.com ]</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>13. Acceptance of Terms</h2>
+            <p>By using the Quiz & Document Tools App, you acknowledge that:</p>
+            <ul>
+                <li>You have read and understood this Privacy Policy</li>
+                <li>You consent to the data practices described herein</li>
+                <li>You are responsible for the quizzes you create and data you process</li>
+                <li>You will use the app in compliance with applicable laws and regulations</li>
+                <li>You understand the local nature of data storage and processing</li>
+            </ul>
         </div>
 
         <div class="note">
-            <h3>Additional Notices:</h3>
+            <h3>Key Privacy Features:</h3>
             <ul>
-                <li>This app complies with Google Play Store and Meta (Facebook) developer policies</li>
-                <li>UPI payment features work directly through payment apps</li>
-                <li>Dashboard data is for local use only</li>
-                <li>NO user data is shared with third parties</li>
-                <li>All data processing occurs locally on user's device</li>
+                <li><strong>100% Local Processing:</strong> No data sent to external servers</li>
+                <li><strong>No Account Required:</strong> Use without providing personal information</li>
+                <li><strong>Complete User Control:</strong> Full control over data creation and deletion</li>
+                <li><strong>No Advertising:</strong> No ads, no tracking, no data selling</li>
+                <li><strong>Educational Focus:</strong> Designed with student and teacher privacy in mind</li>
+                <li><strong>Regular Security Updates:</strong> Ongoing commitment to data security</li>
             </ul>
-            <p><em>It is recommended to consult a lawyer for legal advice regarding this Privacy Policy.</em></p>
         </div>
 
         <footer>
-            <p>&copy; [2025] Study Studio App. All rights reserved.</p>
+            <p>&copy; [ 2025 ] Study Studio App. All rights reserved.</p>
+            <p>This Privacy Policy complies with Google Play Store requirements and global privacy standards.</p>
+            <p>Version: 1.0 | Last Updated: [Insert Current Date]</p>
         </footer>
     </div>
+
+    <script>
+        // Add current year to footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const yearElements = document.querySelectorAll('[Current Year]');
+            yearElements.forEach(el => {
+                el.textContent = currentYear;
+            });
+            
+            // Add current date if placeholder exists
+            const dateElements = document.querySelectorAll('[Insert Current Date]');
+            const currentDate = new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            dateElements.forEach(el => {
+                el.textContent = currentDate;
+            });
+        });
+    </script>
 </body>
 </html>
